@@ -10,7 +10,6 @@
 		58AF77661ACA9D1C007EB55B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF77651ACA9D1C007EB55B /* main.m */; };
 		58AF77691ACA9D1C007EB55B /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF77681ACA9D1C007EB55B /* AppDelegate.m */; };
 		58AF776C1ACA9D1C007EB55B /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF776B1ACA9D1C007EB55B /* ViewController.m */; };
-		58AF776F1ACA9D1C007EB55B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58AF776D1ACA9D1C007EB55B /* Main.storyboard */; };
 		58AF77711ACA9D1C007EB55B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AF77701ACA9D1C007EB55B /* Images.xcassets */; };
 		58AF77741ACA9D1C007EB55B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AF77721ACA9D1C007EB55B /* LaunchScreen.xib */; };
 		58AF77801ACA9D1C007EB55B /* LWMediaPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF777F1ACA9D1C007EB55B /* LWMediaPlayerTests.m */; };
@@ -34,12 +33,12 @@
 		58AF77681ACA9D1C007EB55B /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		58AF776A1ACA9D1C007EB55B /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		58AF776B1ACA9D1C007EB55B /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		58AF776E1ACA9D1C007EB55B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		58AF77701ACA9D1C007EB55B /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		58AF77731ACA9D1C007EB55B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
 		58AF77791ACA9D1C007EB55B /* LWMediaPlayerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LWMediaPlayerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		58AF777E1ACA9D1C007EB55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58AF777F1ACA9D1C007EB55B /* LWMediaPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWMediaPlayerTests.m; sourceTree = "<group>"; };
+		58AF77891ACAA0CF007EB55B /* LWMediaPlayer.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWMediaPlayer.pch; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,7 +84,6 @@
 				58AF77681ACA9D1C007EB55B /* AppDelegate.m */,
 				58AF776A1ACA9D1C007EB55B /* ViewController.h */,
 				58AF776B1ACA9D1C007EB55B /* ViewController.m */,
-				58AF776D1ACA9D1C007EB55B /* Main.storyboard */,
 				58AF77701ACA9D1C007EB55B /* Images.xcassets */,
 				58AF77721ACA9D1C007EB55B /* LaunchScreen.xib */,
 				58AF77631ACA9D1C007EB55B /* Supporting Files */,
@@ -98,6 +96,7 @@
 			children = (
 				58AF77641ACA9D1C007EB55B /* Info.plist */,
 				58AF77651ACA9D1C007EB55B /* main.m */,
+				58AF77891ACAA0CF007EB55B /* LWMediaPlayer.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -199,7 +198,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58AF776F1ACA9D1C007EB55B /* Main.storyboard in Resources */,
 				58AF77741ACA9D1C007EB55B /* LaunchScreen.xib in Resources */,
 				58AF77711ACA9D1C007EB55B /* Images.xcassets in Resources */,
 			);
@@ -244,14 +242,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		58AF776D1ACA9D1C007EB55B /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				58AF776E1ACA9D1C007EB55B /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		58AF77721ACA9D1C007EB55B /* LaunchScreen.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -343,6 +333,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = LWMediaPlayer/LWMediaPlayer.pch;
 				INFOPLIST_FILE = LWMediaPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -353,6 +344,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = LWMediaPlayer/LWMediaPlayer.pch;
 				INFOPLIST_FILE = LWMediaPlayer/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -412,6 +404,7 @@
 				58AF77851ACA9D1C007EB55B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		58AF77861ACA9D1C007EB55B /* Build configuration list for PBXNativeTarget "LWMediaPlayerTests" */ = {
 			isa = XCConfigurationList;
@@ -420,6 +413,7 @@
 				58AF77881ACA9D1C007EB55B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
