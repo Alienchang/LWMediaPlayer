@@ -13,6 +13,9 @@
 		58AF77711ACA9D1C007EB55B /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58AF77701ACA9D1C007EB55B /* Images.xcassets */; };
 		58AF77741ACA9D1C007EB55B /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AF77721ACA9D1C007EB55B /* LaunchScreen.xib */; };
 		58AF77801ACA9D1C007EB55B /* LWMediaPlayerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF777F1ACA9D1C007EB55B /* LWMediaPlayerTests.m */; };
+		58AF778E1ACAA3A2007EB55B /* VideoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF778D1ACAA3A2007EB55B /* VideoViewController.m */; };
+		58AF77921ACAA3B2007EB55B /* PictureViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 58AF77901ACAA3B2007EB55B /* PictureViewController.m */; };
+		58AF77931ACAA3B2007EB55B /* PictureViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 58AF77911ACAA3B2007EB55B /* PictureViewController.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -39,6 +42,11 @@
 		58AF777E1ACA9D1C007EB55B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		58AF777F1ACA9D1C007EB55B /* LWMediaPlayerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LWMediaPlayerTests.m; sourceTree = "<group>"; };
 		58AF77891ACAA0CF007EB55B /* LWMediaPlayer.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LWMediaPlayer.pch; sourceTree = "<group>"; };
+		58AF778C1ACAA3A2007EB55B /* VideoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = VideoViewController.h; sourceTree = "<group>"; };
+		58AF778D1ACAA3A2007EB55B /* VideoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = VideoViewController.m; sourceTree = "<group>"; };
+		58AF778F1ACAA3B2007EB55B /* PictureViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PictureViewController.h; sourceTree = "<group>"; };
+		58AF77901ACAA3B2007EB55B /* PictureViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PictureViewController.m; sourceTree = "<group>"; };
+		58AF77911ACAA3B2007EB55B /* PictureViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = PictureViewController.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -80,6 +88,8 @@
 		58AF77621ACA9D1C007EB55B /* LWMediaPlayer */ = {
 			isa = PBXGroup;
 			children = (
+				58AF778A1ACAA371007EB55B /* Picture */,
+				58AF778B1ACAA371007EB55B /* Video */,
 				58AF77671ACA9D1C007EB55B /* AppDelegate.h */,
 				58AF77681ACA9D1C007EB55B /* AppDelegate.m */,
 				58AF776A1ACA9D1C007EB55B /* ViewController.h */,
@@ -116,6 +126,25 @@
 				58AF777E1ACA9D1C007EB55B /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		58AF778A1ACAA371007EB55B /* Picture */ = {
+			isa = PBXGroup;
+			children = (
+				58AF778F1ACAA3B2007EB55B /* PictureViewController.h */,
+				58AF77901ACAA3B2007EB55B /* PictureViewController.m */,
+				58AF77911ACAA3B2007EB55B /* PictureViewController.xib */,
+			);
+			path = Picture;
+			sourceTree = "<group>";
+		};
+		58AF778B1ACAA371007EB55B /* Video */ = {
+			isa = PBXGroup;
+			children = (
+				58AF778C1ACAA3A2007EB55B /* VideoViewController.h */,
+				58AF778D1ACAA3A2007EB55B /* VideoViewController.m */,
+			);
+			path = Video;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -198,6 +227,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				58AF77931ACAA3B2007EB55B /* PictureViewController.xib in Resources */,
 				58AF77741ACA9D1C007EB55B /* LaunchScreen.xib in Resources */,
 				58AF77711ACA9D1C007EB55B /* Images.xcassets in Resources */,
 			);
@@ -218,7 +248,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				58AF776C1ACA9D1C007EB55B /* ViewController.m in Sources */,
+				58AF77921ACAA3B2007EB55B /* PictureViewController.m in Sources */,
 				58AF77691ACA9D1C007EB55B /* AppDelegate.m in Sources */,
+				58AF778E1ACAA3A2007EB55B /* VideoViewController.m in Sources */,
 				58AF77661ACA9D1C007EB55B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
